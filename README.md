@@ -4,7 +4,7 @@ This repository should contain all documentation written for Sandhi.
 
 ## What is Sandhi?
 
-## Getting it
+## [Getting it](getting_it.md)
 - Pre-requisites
 - Build it
 - Get Binary
