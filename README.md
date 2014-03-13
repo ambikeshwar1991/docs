@@ -9,16 +9,16 @@ This repository should contain all documentation written for Sandhi.
 - Build it
 - Get Binary
 
-## Using it 
+## [Using it](using_it.md)
 - Hello World
 - Demos
 
-## Code Development
+## [Code Development](code_devel.md)
 - Disruptive introduction to framework
 - Coding a simple block
 - Coding a Sci-block
 
-## Scope
+## [Scope](scope.md)
 - Current development
 - Areas to be explored
 - Links to earlier documentation
