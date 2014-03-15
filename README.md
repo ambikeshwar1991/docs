@@ -5,7 +5,7 @@ Documentation project for software called as Sandhi.
 This repository should contain all documentation written for Sandhi.
 
 ## What is Sandhi?
-Sandhi is a free and open-source visual programming language and editor to replace applications built using LabVIEW. Currently it is aimed to support application development for control system engineering but it's framework is flexible enough to extend it to other areas of interest. Sandhi is forked from GNU Radio project which uses [GRAS](https://github.com/guruofquality/gras/wiki) (GNU Radio Advanced Scheduler)
+Sandhi is a free and open-source visual programming language and editor to replace applications built using LabVIEW. Currently it is aimed to support application development for control system engineering but it's framework is flexible enough to extend it to other areas of interest. Sandhi is forked from GNU Radio project and it uses [GRAS](https://github.com/guruofquality/gras/wiki) (GNU Radio Advanced Scheduler) as its application scheduler.
 
 ## [Getting it](getting_it.md)
 - [Pre-requisites](getting_it.md#pre-requisites)
