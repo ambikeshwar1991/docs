@@ -8,7 +8,9 @@ Mostly you don't have sufficient permissions to access /dev/ttyUSB0 (which is SB
 	sudo adduser `whoami` dialout
 **Logout User** and check.
 
+Have more questions? Raise an [issue!](https://github.com/gnu-sandhi/sandhi/issues)
+
 ### About Us
-GNU GPL V3 <br>
-Project developed at FOSSEE, NME-ICT, IIT Bombay sponsored by MHRD Govt of India.
+Project licensed under GNU General Public License V3 <br>
+Developed at FOSSEE for NME-ICT, IIT Bombay; sponsored by MHRD Govt of India.
 
