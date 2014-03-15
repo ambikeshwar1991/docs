@@ -7,3 +7,8 @@ Mostly you don't have sufficient permissions to access /dev/ttyUSB0 (which is SB
 	
 	sudo adduser `whoami` dialout
 **Logout User** and check.
+
+### About Us
+GNU GPL V3 <br>
+Project developed at FOSSEE, NME-ICT, IIT Bombay sponsored by MHRD Govt of India.
+

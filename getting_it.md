@@ -89,3 +89,4 @@ and then proceed as given in __Build it__ section from _make_ command.
 `fpm -s dir -t deb -n "sandhi" -v 0.9 -C out/ -p sandhi-VERSION_ARCH.deb -d "git-core autoconf automake make libtool g++ python-dev swig pkg-config libboost1.48-all-dev libfftw3-dev libcppunit-dev libgsl0-dev libusb-dev sdcc libsdl1.2-dev python-wxgtk2.8 python-numpy python-cheetah python-lxml doxygen python-qt4 python-qwt5-qt4 libxi-dev libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev" /usr/local/bin /usr/local/include/ /usr/local/lib /usr/local/libexec/ /usr/local/share/ /usr/local/etc/`
 
 ------------
+
