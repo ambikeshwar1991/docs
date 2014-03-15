@@ -48,7 +48,7 @@ To integrate it, you need to
     1. Copy your xml in _../gr-myblock/grc/_ and edit its import section to reflect integration changes. For example: _import myblock_ will become _from gnuradio.myblock import myblock as myblock_
     2. Modify it's CMakeLists.txt to reflect changes.
     3. Similarly modify CMakeLists.txt in _../gr-myblock/python/_ and  _../gr-myblock/doc/_ the one in _myblock/_ folder itself; add additional dependeny check if your block requires any.
-    4. The top_level CMakeLists.txt in _gr36/_ folder should include this line _add_subdirectory(gr-myblock)_
+    4. The top_level CMakeLists.txt in _gr36/_ folder should include this line `_add_subdirectory(gr-myblock)_`
 
 ### Coding a Sci-block
 This section gives hints on how to use Sciscipy in Sandhi to develop blocks. There are two ways of calling Sciscipy from work_function in python.
@@ -78,4 +78,4 @@ def my_sci_func(x, y):
 
 output_items[0][:2] = my_sci_func(1,2)
 ```
-we realize this is the not the best way to code, but _if it works, it works_
+we realize this is the not the best way to code, but hey, _if it works, it works_
