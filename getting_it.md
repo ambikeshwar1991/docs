@@ -3,7 +3,7 @@ Sandhi, as mentioned earlier, is a free and open-source software, it can be down
 
 ### Pre-requisites
 
-Sandhi is conglomeration of lot of libraries and softwares. It uses GNU Radio at its core. For computational purposes, Scilab and Octave can be interfaced with Sandhi. Sandhi uses a special wrapper called Sciscipy which allows one to call scilab functions from python without having to worry about datatype conversion.
+Sandhi is conglomeration of libraries and softwares. It uses GNU Radio at its core. For computational purposes, Scilab and Octave can be interfaced with Sandhi. Sandhi uses a special wrapper called Sciscipy which allows one to call scilab functions from python without having to worry about datatype conversion.
 
 ---------------------------
 #### <a href='http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall#Install-the-Pre-Requisites'>Installing GNU Radio dependencies</a>
