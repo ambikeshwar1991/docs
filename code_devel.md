@@ -39,11 +39,16 @@ We'd be pleased to include your block if it suits a majority of Sandhi-users; so
 1. Send us a pull request of your block, we'll accept it and integrate it in Sandhi for you
 2. Do it yourself and then send us a pull request on github (to get the warm fuzzy feeling of having helped us)
 
-To integrate it, you need to
+The [CMake](http://www.cmake.org/cmake/help/cmake_tutorial.html) files in Sandhi check for dependencies, proper namespace and structure before Sandhi is compiled as source; So one has to modify CMakefiles and structure his/her code files properly for Sandhi to include one's block.<br>
+To integrate it, you need to 
 
 1. Decide on a namespace and stick to it; here we'll use myblock as our namespace.
 2. Create a folder in sandhi/gr36 folder with proper name/prefix (For Example: gr-myblock)
-3. Restructure your files according to previous [block](https://github.com/gnu-sandhi/gnuradio/tree/master/gr-input) _laziness is virtue_
-..1. Copy your xml and edit its import section to reflect integration changes. For example: _import myblock_ will become _from gnuradio.myblock import myblock as myblock_
+3. Fastest way is to restructure your files according to a given [block](https://github.com/gnu-sandhi/gnuradio/tree/master/gr-input) in Sandhi. Copy the block and study its folder content and CMakeLists.txt files _laziness is virtue_.  
+    1. Copy your xml in _../gr-myblock/grc/_ and edit its import section to reflect integration changes. For example: _import myblock_ will become _from gnuradio.myblock import myblock as myblock_
+    2. Modify it's CMakeLists.txt to reflect changes.
+    3. Similarly modify CMakeLists.txt in _../gr-myblock/python/_ and  _../gr-myblock/doc/_ the one in _myblock/_ folder itself; add additional dependeny check if your block requires any.
+    4. The top_level CMakeLists.txt in _gr36/_ folder should include this line _add_subdirectory(gr-myblock)_
 
-### Coding a Sci-block
+### Coding a Sci-block	
+
