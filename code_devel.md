@@ -20,7 +20,7 @@ To know more, here's link to it's [official page](http://forge.scilab.org/index.
 Sandhi uses GNU Radio (GR) V3.6 with GNU Radio Companion(GRC) as its front-end. [GNU Radio](http://gnuradio.org/redmine/projects/gnuradio/wiki) is open source software for implementing software radio visually through flowgraphs and blocks. A flow graph in GNU Radio is visual representation of data flow between two or more nodes, and these nodes are called blocks (which process the flowing data). Sandhi inherits this capability of intuitively implementing logic through flowgraph which makes it a good LabVIEW replacement.
 
 ### Coding a simple block
-Since sandhi is still in beta stages, some of user-specific block may be missing; but this is not really a problem, since a user with limited python experience can create block himself/herself using Sandhi's framework. To follow a descriptive, step-by-step and conventional guide check GNU Radio's [Out of Tree Module](http://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules). A block can be either coded in python or C++; but given python is easier to start with, we prefer coding in python. This section will present a rapid but unconventional approach:
+Since sandhi is still in beta stages, some of user-specific block may be missing; but this is not really a problem, since a user with limited python experience can create block himself/herself using Sandhi's framework. To follow a descriptive, step-by-step and conventional guide check GNU Radio's [Out of Tree Module](http://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules). A block can be either coded in python or C++; but given python is easier to start with, we prefer coding in python. This section will present a rapid but unconventional approach: _impatience is virtue_
 
 #### Overview
 A block in Sandhi essentially requires two things:
@@ -33,4 +33,17 @@ Sandhi, by default, reads any xml block present in ~/.grc_gnuradio. Hence all ou
 #### Sample code
 Sample code is availabe with annotations [here](code/.grc_gnuradio/)
 
+#### Integrating block with Sandhi
+We'd be pleased to include your block if it suits a majority of Sandhi-users; so to include your block with Sandhi either:
 
+1. Send us a pull request of your block, we'll accept it and integrate it in Sandhi for you
+2. Do it yourself and then send us a pull request on github (to get the warm fuzzy feeling of having helped us)
+
+To integrate it, you need to
+
+1. Decide on a namespace and stick to it; here we'll use myblock as our namespace.
+2. Create a folder in sandhi/gr36 folder with proper name/prefix (For Example: gr-myblock)
+3. Restructure your files according to previous [block](https://github.com/gnu-sandhi/gnuradio/tree/master/gr-input) _laziness is virtue_
+..1. Copy your xml and edit its import section to reflect integration changes. For example: _import myblock_ will become _from gnuradio.myblock import myblock as myblock_
+
+### Coding a Sci-block
