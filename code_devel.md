@@ -20,13 +20,17 @@ To know more, here's link to it's [official page](http://forge.scilab.org/index.
 Sandhi uses GNU Radio (GR) V3.6 with GNU Radio Companion(GRC) as its front-end. [GNU Radio](http://gnuradio.org/redmine/projects/gnuradio/wiki) is open source software for implementing software radio visually through flowgraphs and blocks. A flow graph in GNU Radio is visual representation of data flow between two or more nodes, and these nodes are called blocks (which process the flowing data). Sandhi inherits this capability of intuitively implementing logic through flowgraph which makes it a good LabVIEW replacement.
 
 ### Coding a simple block
-Since sandhi is still in beta stages, some of user-specific block may be missing; but this is not really a problem, since a user with limited python experience can create block himself/herself using Sandhi's framework. To follow a descriptive, step-by-step and conventional guide check GNU Radio's [Out of Tree Module](http://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules). This section will present a rapid but unconventional approach:
+Since sandhi is still in beta stages, some of user-specific block may be missing; but this is not really a problem, since a user with limited python experience can create block himself/herself using Sandhi's framework. To follow a descriptive, step-by-step and conventional guide check GNU Radio's [Out of Tree Module](http://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules). A block can be either coded in python or C++; but given python is easier to start with, we prefer coding in python. This section will present a rapid but unconventional approach:
 
 #### Overview
-A block in Sandhi essentially requires two things:<br>
-1.A xml file (front end block description which is parsed by GRC to display that block.)
-2.A python file (which describes how the block functions.)
+A block in Sandhi essentially requires two things:
 
+1. A xml file (front end block description which is parsed by GRC to display that block.)
+2. A python file (which describes how the block functions.)
 
+Sandhi, by default, reads any xml block present in ~/.grc_gnuradio. Hence all our initial development will be done in the .grc_gnuradio folder.
+
+#### Sample code
+Sample code is availabe with annotations [here](code/.grc_gnuradio/)
 
 
