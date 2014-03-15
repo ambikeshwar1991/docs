@@ -88,5 +88,17 @@ and then proceed as given in __Build it__ section from _make_ command.
 
 `fpm -s dir -t deb -n "sandhi" -v 0.9 -C out/ -p sandhi-VERSION_ARCH.deb -d "git-core autoconf automake make libtool g++ python-dev swig pkg-config libboost1.48-all-dev libfftw3-dev libcppunit-dev libgsl0-dev libusb-dev sdcc libsdl1.2-dev python-wxgtk2.8 python-numpy python-cheetah python-lxml doxygen python-qt4 python-qwt5-qt4 libxi-dev libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev" /usr/local/bin /usr/local/include/ /usr/local/lib /usr/local/libexec/ /usr/local/share/ /usr/local/etc/`
 
+#### Final steps
+- To run sandhi, path variables need to be set; even if one has installed through debian package.
+- Set Path variables in /etc/environment 
+`export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games`<br>
+`export SCI=/usr/share/scilab`<br>
+`export LD_LIBRARY_PATH=:/usr/lib/scilab:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server/:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/native_threads/:/usr/local/lib`<br>
+`export PYTHONPATH=/usr/local/lib/python2.7/dist-packages/`<br>
+
+- Source /etc/environment in .bashrc<br>
+`source /etc/environment`<br>
+- Logout and login again, and you are done!
+
 ------------
 

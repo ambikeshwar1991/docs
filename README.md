@@ -13,8 +13,8 @@ Sandhi is a free and open-source visual programming language and editor to repla
 - [Get Binary](getting_it.md#get-binary)
 
 ## [Using it](using_it.md)
-- Hello World
-- Demos
+- [Simple Addition](using_it.md#simple-addition)
+- [Demos](demos)
 
 ## [Code Development](code_devel.md)
 - [Disruptive introduction to framework](code_devel.md#disruptive-introduction-to-framework)
