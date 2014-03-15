@@ -19,12 +19,12 @@ Sandhi is a free and open-source visual programming language and editor to repla
 ## [Code Development](code_devel.md)
 - [Disruptive introduction to framework](code_devel.md#disruptive-introduction-to-framework)
 - [Coding a simple block](code_devel.md#coding-a-simple-block)
-- Coding a Sci-block
+- [Coding a Sci-block](code_devel.md#coding-a-sci-block)
 
 ## [Scope](scope.md)
 - Current development
 - Areas to be explored
 - Links to earlier documentation
--- Aviral's DDP Phase I report, Saruch's Intersnhip report, Sandhi paper, Sandhi presentation
+- - Aviral's DDP Phase I report, Saruch's Intersnhip report, Sandhi paper, Sandhi presentation
 
 ## [Frequently Asked Questions](faqs.md)
