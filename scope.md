@@ -4,7 +4,7 @@
 * Include block for Multiple Input Multiple Output(MIMO) system.
 * Include Kalman Filter Block.
 
-### Areas to be explore
+### Areas to be explored
 * Making it easier and more intuitive to implement loops and conditional loops; Ref: [GNU Radio loops in top_block](http://sumitgnuradio.blogspot.in/2012/10/either-you-can-use-tb.html)
 * Deploying Sandhi as a web-service
 * Using GPU cores through OpenGL to increase operation speed
