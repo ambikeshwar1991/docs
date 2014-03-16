@@ -58,7 +58,7 @@ Clone sciscipy-1.0.0 from our repository; run _install_ script from the director
     sudo make install
     sudo ldconfig
 
-#### Current Build Status [![Build Status](https://travis-ci.org/manojgudi/sandhi.png)](https://travis-ci.org/gnu-sandhi/sandhi)
+#### Current Build Status [![Build Status](https://travis-ci.org/gnu-sandhi/sandhi.png)](https://travis-ci.org/gnu-sandhi/sandhi)
 
 ### Get Binary
 
