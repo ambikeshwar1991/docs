@@ -32,5 +32,5 @@ Sandhi is a free and open-source visual programming language and editor to repla
 ### Get a single page documentation
 1. Clone this repository
 2. `sudo ./compile.sh`
-3. Checkout one.html
+3. Checkout `one_page_doc.html`
 
