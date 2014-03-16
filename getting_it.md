@@ -37,7 +37,7 @@ Clone sciscipy-1.0.0 from our repository; run _install_ script from the director
 
 #### Downloading Source Code
 
-    git clone http://github.com/manojgudi/sandhi.git
+    git clone http://github.com/gnu-sandhi/sandhi.git
     cd sandhi/
     git submodule init
     git submodule update
@@ -62,8 +62,8 @@ Clone sciscipy-1.0.0 from our repository; run _install_ script from the director
 
 ### Get Binary
 
-Builds for Ubuntu 12.04 for 64bit Architecture is hosted on:
-http://fossee.in/sandhi_builds/
+Builds for Ubuntu 12.04 for 64bit Architecture is hosted [here](http://fossee.in/sandhi_builds/)
+
 
 #### Packaging it for Ubuntu for other architecture
 We use a package called [fpm](https://github.com/jordansissel/fpm/wiki) to roll-out .deb files for Ubuntu.
@@ -82,9 +82,6 @@ Now packaging Sandhi using fpm we have to build Sandhi by changing _cmake_ optio
 `cmake -DCMAKE_INSTALL_PREFIX:PATH=out`
 
 and then proceed as given in __Build it__ section from _make_ command.
-
-`fpm -s dir -t deb -n "sandhi" -v $VERSION_NUMBER  -C /tmp/installdir/ -p sandhi-VERSION_ARCH.deb -d "libssl0.9.8 (>= 0)" usr/bin usr/lib`
-
 
 `fpm -s dir -t deb -n "sandhi" -v 0.9 -C out/ -p sandhi-VERSION_ARCH.deb -d "git-core autoconf automake make libtool g++ python-dev swig pkg-config libboost1.48-all-dev libfftw3-dev libcppunit-dev libgsl0-dev libusb-dev sdcc libsdl1.2-dev python-wxgtk2.8 python-numpy python-cheetah python-lxml doxygen python-qt4 python-qwt5-qt4 libxi-dev libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev" /usr/local/bin /usr/local/include/ /usr/local/lib /usr/local/libexec/ /usr/local/share/ /usr/local/etc/`
 
